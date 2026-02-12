@@ -3,15 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../styles/signUp.css">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/signUp.css">                                                                           
     <title>Studio Ghibli</title>
 </head>
 <body>
     <main>
+        <!-- card de cadastro central na página -->
         <div class="SignUp-Form">
             <p>Sign-up Forms</p>
-            <form action="" method="get" class="registration-form">
+            <form action="login.html" method="get" class="registration-form">
+                <!-- cada div é responsavel por segurar o conteúdo que será informado ao usuário,
+                 a nomenclatura da classe padronizada assegura que todos os input's teram o msm desing
+                 evitando a quebra do padrão visual e harmonia do design da página. -->
                 <div class="form-fields">
                     <input type="text" class="username" id="username" placeholder=" ">
                     <label for="username">Username:</label>
@@ -24,8 +27,10 @@
                     <input type="password" name="password" id="password" placeholder=" ">
                     <label for="password">Create a password</label>
                 </div>
-
+                <!-- o botão deve guardar os dados fornecidos para serem usados na página de login,
+                 e para que seja exibido durante a navegação do site (username apenas durante a navegação) -->
                     <button type="submit">Submit</button>
+                    <a href="login.html">Alredy has an account? Login!</a>
             </form>
         </div>
     </main>

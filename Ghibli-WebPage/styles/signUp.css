@@ -2,8 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
 }
 
+/* todos as rules css para a página de Sign-Up */
+/* logo seguido pelo reset global de css, para retirar qualquer rule já donfigurada pelo navegador,
+seguimos com as rule's para os styles das tag's html, onde apenas chamamos por seus nomes.*/
 body{
     min-height: 100vh;
     background-image: url("../images/PorcoRossoNigthWallpaper.jpg");
@@ -23,7 +27,7 @@ button{
     width: 120px;
     height: 30px;
     color: #eaf1f8;
-     background: rgba(19, 34, 49, 0.6); 
+    background: rgba(19, 34, 49, 0.6); 
     border: 1px solid rgba(168,203,237,0.4);
     border-radius: 20px;
     transition: 0.3s ease;
@@ -35,6 +39,10 @@ button:hover{
     box-shadow: 0 0 10px rgba(168,203,237,0.6);
 }
 
+/* a partir daqui temos as rule's para os styles das classes para as tag's html. cada nomenclatura de class
+deve vir precedida de um "." para a identificação da class; mais de uma nomenclatura pode ser chamada por vez se
+a intenção for dar o mesmo style para o elemento; é possivel mesclar o chamado de uma class com uma tag para
+atribuir uma rule css.*/
 .SignUp-Form{
     display: flex;
     align-items: center;
@@ -46,7 +54,7 @@ button:hover{
     border-radius: 20px;
     background: rgba(15, 28, 46, 0.45);
     border: 1px solid rgba(255,255,255,0.35);
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(3px);
 }
 
 
@@ -55,10 +63,14 @@ button:hover{
    color: #eaf1f8;
 }
 
+.SignUp-Form p{
+    margin-bottom: 3rem;
+}
+
 .registration-form{
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 50px; /*cria um espaço entre os elementos.*/
     width: 100%;
 }
 
@@ -69,14 +81,14 @@ button:hover{
 
 .form-fields input{
     width: 100%;
-    padding: 1rem 0.5rem;
+    padding: 1rem 0.5rem; /*espaço entre as bordas do elemento e o seu conteúdo.*/
     background: transparent;
     border: none;
     border-bottom: 1px solid rgba(234,241,248,0.6);
     color: #eaf1f8;
     outline: none;
 }
-
+/* faz a transição da nomenclatura imitando um placeholder para se tornar um label de fato.*/
 .form-fields label{
     position: absolute;
     left: 0.5rem;
@@ -101,4 +113,16 @@ button:hover{
 .registration-form  button{
     align-self: center;
     margin-top: 1.5rem;
+}
+
+.SignUp-Form a{
+    display: flex;
+    justify-content: center;
+    color: #A8CBED;
+    transition: 0.3s ease;
+}
+
+.SignUp-Form a:hover{
+    color: #eaf1f8;
+    text-shadow: 0 0 5px rgba(168,203,237,0.8);
 }
