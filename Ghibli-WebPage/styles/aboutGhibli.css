@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+main{
+    min-height: 100vh;
+    margin: 1.5rem;
+    border: solid 2px green;
+}
+
+.background-Image{
+    height: 500px;
+    background-image: url("../images/logoGhibliTotoro.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.navBar{
+    background-color: rgba(0, 48, 96, 0.636);
+    /* border-radius: 50px; */
+    backdrop-filter: blur(3px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+a{
+    color: #eaf1f8;
+    margin: 1.5rem;
+}
+
+a:hover{
+    color: #003060;
+    text-shadow: 0 0 5px rgba(168,203,237,0.8);
+}
