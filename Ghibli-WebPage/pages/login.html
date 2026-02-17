@@ -3,23 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/auth.css">
     <link rel="stylesheet" href="../styles/login.css">
     <title>Studio Ghibli</title>
 </head>
 <body>
     <main>
-        <div class="login-Form">
+        <div class="auth-card">
             <p>Login on your account</p>
-            <form action="../index.html" class="validation-form">
-                <div class="input-fields">
-                    <input type="text" class="username" placeholder=" ">
+            <form action="../index.html" class="auth-form">
+                <div class="auth-field">
+                    <input type="text" class="username" id="username" placeholder=" " name="username">
                     <label for="username">Username:</label>
                 </div>
-                <div class="input-fields">
-                    <input type="password" class="password" placeholder=" ">
+                <div class="auth-field">
+                    <input type="password" class="password" id="password" placeholder=" " name="password">
                     <label for="password">Enter your password</label>
                 </div>
-                <button type="button">Login</button>
+                <button type="submit" class="auth-button">Login</button>
                 <a href="signUp.html">Don't have an account? Sign-up!</a>
             </form>
         </div>

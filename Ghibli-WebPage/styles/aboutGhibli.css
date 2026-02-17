@@ -13,7 +13,7 @@ main{
 }
 
 
-.background-Image{
+.background-image{
     height: 500px;
     background-image: linear-gradient(to bottom, rgba(0,0,0,0) 70%, #003060 100%),
     url("../images/logoGhibliTotoro.jpg");
@@ -22,7 +22,7 @@ main{
     background-position: center;
 }
 
-.navBar{
+.nav-bar{
     background-color: rgba(0, 48, 96, 0.636);
     /* border-radius: 50px; */
     backdrop-filter: blur(3px);
@@ -32,13 +32,13 @@ main{
     gap: 15px;
 }
 
-.navBar a {
+.nav-bar a {
     color: #eaf1f8;
     margin: 1.5rem;
     transition: 0.3s ease;
 }
 
-.navBar a:hover {
+.nav-bar a:hover {
     color: #eaf1f8;
     text-shadow: 0 0 5px rgba(168,203,237,0.8);
 }
@@ -92,7 +92,7 @@ main{
     margin-bottom: 20px;
 }
 
-.about-info .imageCreator{
+.about-info .image-creator{
     flex: 0.8;
     display: flex;
     justify-content: center;

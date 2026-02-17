@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.auth-button {
+    width: 120px;
+    height: 30px;
+    color: #eaf1f8;
+    background: rgba(19, 34, 49, 0.6);
+    border: 1px solid rgba(168, 203, 237, 0.4);
+    border-radius: 20px;
+    transition: 0.3s ease;
+}
+
+.auth-button:hover {
+    background: #2c4a63;
+    transform: translateY(-2px);
+    box-shadow: 0 0 10px rgba(168, 203, 237, 0.6);
+}
+
+.auth-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 400px;
+    padding: 2rem;
+    border-radius: 20px;
+    background: rgba(15, 28, 46, 0.45);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    backdrop-filter: blur(3px);
+}
+
+.auth-card p,
+.auth-form {
+    color: #eaf1f8;
+}
+
+.auth-card p {
+    margin-bottom: 3rem;
+}
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 100%;
+}
+
+.auth-form .auth-button {
+    align-self: center;
+    width: 140px;
+    margin-top: 1.5rem;
+}
+
+.auth-field {
+    position: relative;
+    width: 100%;
+}
+
+.auth-field input {
+    width: 100%;
+    padding: 1rem 0.5rem;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(234, 241, 248, 0.6);
+    color: #eaf1f8;
+    outline: none;
+}
+
+.auth-field label {
+    position: absolute;
+    left: 0.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #eaf1f8;
+    pointer-events: none;
+    transition: 0.3s ease;
+}
+
+.auth-field input:focus + label,
+.auth-field input:not(:placeholder-shown) + label {
+    top: 0;
+    font-size: 0.75rem;
+    color: #eaf1f8;
+}
+
+.auth-field input:focus {
+    border-bottom: 1px solid #a8cbed;
+}
+
+.auth-card a {
+    display: flex;
+    justify-content: center;
+    color: #a8cbed;
+    transition: 0.3s ease;
+}
+
+.auth-card a:hover {
+    color: #eaf1f8;
+    text-shadow: 0 0 5px rgba(168, 203, 237, 0.8);
+}
